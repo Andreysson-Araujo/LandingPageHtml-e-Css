@@ -18,6 +18,7 @@ font-family: 'Open Sans', sans-serif;
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -59,6 +60,10 @@ a{
     text-decoration: none;
 }
 
+p {
+    margin-bottom: 3rem;
+}
+
 .main-bg{
     background-image: url("../img/main2.svg");
     background-size: cover;
@@ -68,6 +73,7 @@ a{
 
 .white-bg{
     background: #fff;
+    color: #282828;
 }
 
 .main-content {
@@ -164,3 +170,10 @@ a{
     height: auto;
 }
   
+.top3-content {
+    max-width: 64rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100vh;
+}
