@@ -177,3 +177,32 @@ p {
     justify-content: center;
     height: 100vh;
 }
+
+.grid-one-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100vh;
+}
+
+.grid {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    counter-reset: grid-couter;
+}
+
+.grid h3{
+    font-size: 3rem;
+    position: relative;
+}
+
+.grid h3::before {
+    counter-increment: grid-couter;
+    content: counter(grid-couter);
+    position: absolute;
+    font-size: 8rem;
+    font-style: italic;
+    top: 0;
+    left: 0;
+}
