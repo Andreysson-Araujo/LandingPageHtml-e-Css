@@ -64,6 +64,37 @@ p {
     margin-bottom: 3rem;
 }
 
+.responsive-table{
+    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: auto;
+    
+}
+
+table {
+    min-width:360px ;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table caption {
+    font-style: italic;
+    font-size: 1.6rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+table td, table th {
+    white-space: nowrap;
+    padding: 0.5rem;
+    text-align: left;
+    border: 0.1rem solid #d3d3d3;
+}
+
+tfoot td, table th{
+    background-color: #eeeeee;
+}
+
 .main-bg{
     background-image: url("../img/main2.svg");
     background-size: cover;
