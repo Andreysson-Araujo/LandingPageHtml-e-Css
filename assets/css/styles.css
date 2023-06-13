@@ -8,6 +8,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /*
@@ -95,6 +96,8 @@ tfoot td, table th{
     background-color: #eeeeee;
 }
 
+
+
 .main-bg{
     background-image: url("../img/main2.svg");
     background-size: cover;
@@ -120,6 +123,11 @@ tfoot td, table th{
 
 .menu-spacing{
     min-height: 65px;
+}
+
+body .full-widht {
+    width: 100%;
+    width: 1 1 100%;
 }
 
 .menu {
@@ -176,7 +184,7 @@ tfoot td, table th{
 }
 .intro-content{
     position: relative;
-    top: -8rem;
+    /*top: -8rem;*/
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
@@ -265,4 +273,76 @@ tfoot td, table th{
 
 .gallery-img img:hover{
     transform: translate(-3%, 3%) scale(1.2) rotate(5deg)
+}
+
+.contact-form {
+    grid-column:span 2;
+}
+
+.contact-form .form-grid {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem
+}
+
+.form-grid legend {
+    font-style: italic;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.form-group {
+    flex: 1 1 320px;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.form-group input, .form-group textarea {
+    border: none;
+    background: #fff;
+    padding: 1.5rem 1.5rem;
+    width: 100%;
+    font-size: 3rem;
+    outline: none;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    box-shadow: 0 0 5px 5px crimson;
+}
+
+.form-group button {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    border: 0.5rem solid #fff;
+    background: none;
+    color: #fff;
+    padding: 1.5rem 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover {
+    background: #fff;
+    color: #282828;
+}
+
+.form-group::placeholder {
+    color: #eeeeee;
+}
+
+.footer{
+    text-align: center;
+    color: #444444;
+    font-size: 1.6rem;
+}
+
+.footer p {
+    margin: 0;
+    padding: 2rem;
 }
