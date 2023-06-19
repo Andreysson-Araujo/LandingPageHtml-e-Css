@@ -264,9 +264,13 @@ body .full-widht {
     max-width: 36rem;
     max-height: 36rem;
     overflow: hidden;
+    margin-left: 20px;
 }
-
 .gallery-img img {
+    
+    width: 360px;
+    height: 360px;
+    object-fit: cover;
     transform: all 300ms easy-in-out;
     cursor: pointer;
 }
@@ -274,6 +278,8 @@ body .full-widht {
 .gallery-img img:hover{
     transform: translate(-3%, 3%) scale(1.2) rotate(5deg)
 }
+
+
 
 .contact-form {
     grid-column:span 2;
