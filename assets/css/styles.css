@@ -216,7 +216,7 @@ body .full-widht {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     text-align: center;
     padding: 8rem 3rem;
 }
@@ -348,7 +348,31 @@ body .full-widht {
     font-size: 1.6rem;
 }
 
+.heart {
+    color: crimson;
+}
+
 .footer p {
     margin: 0;
     padding: 2rem;
+}
+
+@media (max-width: 50rem) {
+    .intro-content, .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-img {
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .gallery-img img {
+        width: 100%;
+    }
+
+    .grid-one-content {
+        display: block
+    }
 }
